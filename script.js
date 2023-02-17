@@ -1,23 +1,3 @@
-function validate() {
-	
-	var loan_amt = document.loan_form.loan_amt.value;
-	var months = document.loan_form.months.value;
-	var rate = document.loan_form.rate.value;
-
-	if (loan_amt <= 0 || isNaN(Number(loan_amt))) {
-		alert("Please enter a valid loan Amount. ");
-		document.loan_form.loan_amt.value = "";
-	} else if (months <= 0 || parseInt(months) != months) {
-		alert("Please enter a valid amount of months. ");
-		document.loan_form.months.value = "";
-	} else if (rate <= 0 || isNaN(Number(rate))) {
-		alert("Please enter a valid rate amount. ");
-		document.loan_form.rate.value = "";
-	} else {
-		calculate(parseFloat(loan_amt), parseInt(months), parseFloat(rate));
-	}
-}
-
 function calculate(loan_amt, months, rate) {
 	
 	i = rate / 100;
@@ -135,3 +115,23 @@ function Reset() {
 			calculate(parseFloat(loan_amt), parseInt(months), parseFloat(rate));
 		}
 	}
+
+function validate() {
+	
+	var loan_amt = document.loan_form.loan_amt.value;
+	var months = document.loan_form.months.value;
+	var rate = document.loan_form.rate.value;
+
+	if (loan_amt <= 0 || isNaN(Number(loan_amt))) {
+		alert("Please enter a valid loan Amount. ");
+		document.loan_form.loan_amt.value = "";
+	} else if (months <= 0 || parseInt(months) != months) {
+		alert("Please enter a valid amount of months. ");
+		document.loan_form.months.value = "";
+	} else if (rate <= 0 || isNaN(Number(rate))) {
+		alert("Please enter a valid rate amount. ");
+		document.loan_form.rate.value = "";
+	} else {
+		calculate(parseFloat(loan_amt), parseInt(months), parseFloat(rate));
+	}
+}
