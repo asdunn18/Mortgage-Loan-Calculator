@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Title</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS v5.2.0-beta1 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="Style.css">
+
+</head>
+
+
+
+
+<div id="container">
+	<h2 style="text-align:center">Loan Installment Calculator<h2>
+			<div id="loan_src">
+				<form name="loan_form">
+					<table style="margin: 10px;">
+						<tr>
+							<td>Loan amount:</td>
+							<td><input type="text" name="loan_amt" id="loan_amt" size="10" /></td>
+						</tr>
+						<tr>
+							<td>Term(Months):</td>
+							<td><input type="text" id="months" name="months" size="10" /></td>
+						</tr>
+						<tr>
+							<td>Interest Rate:</td>
+							<td><input type="text" name="rate" size="10" /></td>
+						</tr>
+
+						<tr>
+							<td><input type="button" onclick="validate()" value="Calculator" /></td>
+							<td><input type="button" onclick="Reset()" value="Reset" />
+							<td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div id="loan_info">
+				<h1>Loan Info</h1>			</div>
+			
+			<div id="table">
+				<h1 style="opacity:0">Table</h1>
+			</div>
+
+
+
+
+			<script src="script.js"></script>
+			</body>
+
+</html>
